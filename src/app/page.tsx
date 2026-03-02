@@ -88,7 +88,6 @@ export default function HomePage() {
           animationType="slide-up"
           useInvertedBackground={false}
           gridVariant="uniform-all-items-equal"
-          carouselMode="buttons"
         >
           <div className="p-6 rounded-lg border border-foreground/10 bg-card">
             <div className="flex items-start gap-4 mb-4">

@@ -51,13 +51,13 @@ export default function PortfolioPage() {
           gridVariant="bento-grid"
           products={[
             {
-              id: "1",              name: "Tel Aviv Heritage Museum",              price: "Completed 2023",              imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg",              imageAlt: "Tel Aviv Heritage Museum exterior design"
+              id: "1",              name: "Tel Aviv Heritage Museum",              price: "Completed 2023",              imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg?_wi=2",              imageAlt: "Tel Aviv Heritage Museum exterior design"
             },
             {
               id: "2",              name: "Jewish Community Cultural Center",              price: "Completed 2022",              imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=2",              imageAlt: "Community cultural center architectural design"
             },
             {
-              id: "3",              name: "Contemporary Residential Tower",              price: "Completed 2024",              imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg",              imageAlt: "Contemporary luxury residential architectural project"
+              id: "3",              name: "Contemporary Residential Tower",              price: "Completed 2024",              imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg?_wi=2",              imageAlt: "Contemporary luxury residential architectural project"
             }
           ]}
         />

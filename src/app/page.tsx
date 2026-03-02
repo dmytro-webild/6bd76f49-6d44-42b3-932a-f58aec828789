@@ -92,7 +92,7 @@ export default function HomePage() {
               icon: Building,
               title: "Tel Aviv Heritage Museum",              description: "A modern museum celebrating Jewish cultural history through innovative architectural storytelling and interactive design.",              mediaItems: [
                 {
-                  imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg",                  imageAlt: "Heritage museum exterior"
+                  imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg?_wi=1",                  imageAlt: "Heritage museum exterior"
                 },
                 {
                   imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=1",                  imageAlt: "Heritage museum interior gallery"
@@ -106,7 +106,7 @@ export default function HomePage() {
                   imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=2",                  imageAlt: "Community center gathering space"
                 },
                 {
-                  imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg",                  imageAlt: "Community center exterior architecture"
+                  imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg?_wi=1",                  imageAlt: "Community center exterior architecture"
                 }
               ]
             },

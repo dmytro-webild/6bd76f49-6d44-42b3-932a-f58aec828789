@@ -51,7 +51,7 @@ export default function HomePage() {
           tagIcon={Building}
           tagAnimation="slide-up"
           background={{ variant: "plain" }}
-          imageSrc="http://img.b2bpic.net/free-photo/vertical-low-angle-shot-laktha-center-reflecting-sunset-russia_181624-30555.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/vertical-low-angle-shot-laktha-center-reflecting-sunset-russia_181624-30555.jpg?_wi=1"
           imageAlt="Modern architectural vision blending heritage and innovation"
           buttons={[
             { text: "Explore Our Work", href: "/portfolio" },
@@ -68,7 +68,7 @@ export default function HomePage() {
           tag="About Webild"
           tagIcon={Compass}
           tagAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg?_wi=1"
           imageAlt="Webild's architectural heritage center design"
           useInvertedBackground={false}
           buttons={[
@@ -144,7 +144,7 @@ export default function HomePage() {
               handle: "@yaelmoran_curator",
               testimonial: "Webild transformed our vision for a modern Jewish heritage center into architectural reality. Their sensitivity to cultural nuance combined with innovative design was exceptional.",
               rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg?_wi=1",
               imageAlt: "Yael Moran testimonial"
             },
             {
@@ -153,7 +153,7 @@ export default function HomePage() {
               handle: "@avihartman_director",
               testimonial: "Working with Webild on our museum expansion was a game-changer. They understood our institutional values while pushing architectural boundaries.",
               rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg?_wi=2",
               imageAlt: "Dr. Avi Hartman testimonial"
             }
           ]}

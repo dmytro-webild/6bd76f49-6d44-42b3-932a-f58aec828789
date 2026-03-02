@@ -7,7 +7,7 @@ import MediaAbout from '@/components/sections/about/MediaAbout';
 import FeatureBorderGlow from '@/components/sections/feature/featureBorderGlow/FeatureBorderGlow';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardThirteen from '@/components/sections/testimonial/TestimonialCardThirteen';
-import FeatureCardTwentyFive from '@/components/sections/feature/FeatureCardTwentyFive';
+import CardStack from '@/components/cardStack/CardStack';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 import Link from 'next/link';
 import { Building, Compass, Lightbulb, Handshake, Star, Users, Palette, Award } from 'lucide-react';
@@ -78,7 +78,7 @@ export default function HomePage() {
       </div>
 
       <div id="heritage" data-section="heritage">
-        <FeatureCardTwentyFive
+        <CardStack
           title="Jewish Heritage & Cultural Pride Showcase"
           description="Explore our portfolio of projects that celebrate Jewish heritage while integrating contemporary design. Each project combines architectural innovation with cultural authenticity."
           tag="Heritage Projects"
@@ -87,53 +87,65 @@ export default function HomePage() {
           textboxLayout="default"
           animationType="slide-up"
           useInvertedBackground={false}
-          features={[
-            {
-              icon: Building,
-              title: "Tel Aviv Heritage Museum",              description: "A modern museum celebrating Jewish cultural history through innovative architectural storytelling and interactive design.",              mediaItems: [
-                {
-                  imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg?_wi=1",                  imageAlt: "Heritage museum exterior"
-                },
-                {
-                  imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=1",                  imageAlt: "Heritage museum interior gallery"
-                }
-              ]
-            },
-            {
-              icon: Users,
-              title: "Jewish Community Cultural Center",              description: "A vibrant community gathering space that honors traditions while fostering contemporary cultural dialogue and celebration.",              mediaItems: [
-                {
-                  imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=2",                  imageAlt: "Community center gathering space"
-                },
-                {
-                  imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg?_wi=1",                  imageAlt: "Community center exterior architecture"
-                }
-              ]
-            },
-            {
-              icon: Palette,
-              title: "Jewish Identity Residential Complex",              description: "Luxury residential design that integrates cultural symbolism and heritage values into contemporary living spaces with modern amenities.",              mediaItems: [
-                {
-                  imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg?_wi=1",                  imageAlt: "Residential complex architectural design"
-                },
-                {
-                  imageSrc: "http://img.b2bpic.net/free-photo/vertical-low-angle-shot-laktha-center-reflecting-sunset-russia_181624-30555.jpg?_wi=2",                  imageAlt: "Residential complex sunset view"
-                }
-              ]
-            },
-            {
-              icon: Compass,
-              title: "Historic Synagogue Renovation",              description: "Respectful restoration of historic Jewish places of worship, preserving cultural heritage while incorporating modern accessibility and functionality.",              mediaItems: [
-                {
-                  imageSrc: "http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg?_wi=1",                  imageAlt: "Synagogue interior architectural details"
-                },
-                {
-                  imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg?_wi=1",                  imageAlt: "Synagogue restoration exterior"
-                }
-              ]
-            }
-          ]}
-        />
+          gridVariant="uniform-all-items-equal"
+          carouselMode="buttons"
+        >
+          <div className="p-6 rounded-lg border border-foreground/10 bg-card">
+            <div className="flex items-start gap-4 mb-4">
+              <Building className="w-6 h-6 flex-shrink-0" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Tel Aviv Heritage Museum</h3>
+                <p className="text-sm text-foreground/70">A modern museum celebrating Jewish cultural history through innovative architectural storytelling and interactive design.</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <img src="http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg?_wi=1" alt="Heritage museum exterior" className="w-full h-24 object-cover rounded" />
+              <img src="http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=1" alt="Heritage museum interior gallery" className="w-full h-24 object-cover rounded" />
+            </div>
+          </div>
+
+          <div className="p-6 rounded-lg border border-foreground/10 bg-card">
+            <div className="flex items-start gap-4 mb-4">
+              <Users className="w-6 h-6 flex-shrink-0" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Jewish Community Cultural Center</h3>
+                <p className="text-sm text-foreground/70">A vibrant community gathering space that honors traditions while fostering contemporary cultural dialogue and celebration.</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <img src="http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=2" alt="Community center gathering space" className="w-full h-24 object-cover rounded" />
+              <img src="http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg?_wi=1" alt="Community center exterior architecture" className="w-full h-24 object-cover rounded" />
+            </div>
+          </div>
+
+          <div className="p-6 rounded-lg border border-foreground/10 bg-card">
+            <div className="flex items-start gap-4 mb-4">
+              <Palette className="w-6 h-6 flex-shrink-0" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Jewish Identity Residential Complex</h3>
+                <p className="text-sm text-foreground/70">Luxury residential design that integrates cultural symbolism and heritage values into contemporary living spaces with modern amenities.</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <img src="http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg?_wi=1" alt="Residential complex architectural design" className="w-full h-24 object-cover rounded" />
+              <img src="http://img.b2bpic.net/free-photo/vertical-low-angle-shot-laktha-center-reflecting-sunset-russia_181624-30555.jpg?_wi=2" alt="Residential complex sunset view" className="w-full h-24 object-cover rounded" />
+            </div>
+          </div>
+
+          <div className="p-6 rounded-lg border border-foreground/10 bg-card">
+            <div className="flex items-start gap-4 mb-4">
+              <Compass className="w-6 h-6 flex-shrink-0" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Historic Synagogue Renovation</h3>
+                <p className="text-sm text-foreground/70">Respectful restoration of historic Jewish places of worship, preserving cultural heritage while incorporating modern accessibility and functionality.</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <img src="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg?_wi=1" alt="Synagogue interior architectural details" className="w-full h-24 object-cover rounded" />
+              <img src="http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg?_wi=1" alt="Synagogue restoration exterior" className="w-full h-24 object-cover rounded" />
+            </div>
+          </div>
+        </CardStack>
       </div>
 
       <div id="services" data-section="services">

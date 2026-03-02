@@ -27,6 +27,7 @@ export default function AboutPage() {
           navItems={[
             { name: "Home", id: "/" },
             { name: "Portfolio", id: "/portfolio" },
+            { name: "Heritage", id: "/heritage" },
             { name: "Services", id: "/services" },
             { name: "Team", id: "/team" },
             { name: "About", id: "/about" },

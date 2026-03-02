@@ -1,7 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TestimonialCardThirteen from '@/components/sections/testimonial/TestimonialCardThirteen';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
@@ -10,19 +10,19 @@ import { Palette, Star } from 'lucide-react';
 export default function PortfolioPage() {
   return (
     <ThemeProvider
-      defaultButtonVariant="text-shift"
-      defaultTextAnimation="reveal-blur"
-      borderRadius="soft"
+      defaultButtonVariant="hover-magnetic"
+      defaultTextAnimation="entrance-slide"
+      borderRadius="rounded"
       contentWidth="medium"
       sizing="largeSmall"
-      background="none"
-      cardStyle="subtle-shadow"
-      primaryButtonStyle="shadow"
-      secondaryButtonStyle="solid"
+      background="aurora"
+      cardStyle="glass-elevated"
+      primaryButtonStyle="gradient"
+      secondaryButtonStyle="glass"
       headingFontWeight="semibold"
     >
       <div id="nav" data-section="nav">
-        <NavbarLayoutFloatingOverlay
+        <NavbarStyleFullscreen
           brandName="Webild"
           navItems={[
             { name: "Home", id: "/" },
@@ -32,10 +32,8 @@ export default function PortfolioPage() {
             { name: "About", id: "/about" },
             { name: "Contact", id: "/contact" }
           ]}
-          button={{
-            text: "Explore Our Work",
-            href: "/portfolio"
-          }}
+          bottomLeftText="Global Community"
+          bottomRightText="hello@webild.com"
         />
       </div>
 
@@ -52,25 +50,13 @@ export default function PortfolioPage() {
           gridVariant="bento-grid"
           products={[
             {
-              id: "1",
-              name: "Tel Aviv Heritage Museum",
-              price: "Completed 2023",
-              imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg",
-              imageAlt: "Tel Aviv Heritage Museum exterior design"
+              id: "1",              name: "Tel Aviv Heritage Museum",              price: "Completed 2023",              imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg",              imageAlt: "Tel Aviv Heritage Museum exterior design"
             },
             {
-              id: "2",
-              name: "Jewish Community Cultural Center",
-              price: "Completed 2022",
-              imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=2",
-              imageAlt: "Community cultural center architectural design"
+              id: "2",              name: "Jewish Community Cultural Center",              price: "Completed 2022",              imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=2",              imageAlt: "Community cultural center architectural design"
             },
             {
-              id: "3",
-              name: "Contemporary Residential Tower",
-              price: "Completed 2024",
-              imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg",
-              imageAlt: "Contemporary luxury residential architectural project"
+              id: "3",              name: "Contemporary Residential Tower",              price: "Completed 2024",              imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg",              imageAlt: "Contemporary luxury residential architectural project"
             }
           ]}
         />
@@ -89,22 +75,12 @@ export default function PortfolioPage() {
           showRating={true}
           testimonials={[
             {
-              id: "1",
-              name: "Rachel Goldstein",
-              handle: "@rachelgoldstein_dev",
-              testimonial: "Webild delivered a residential project that honors cultural heritage while providing modern luxury. Their attention to detail is remarkable.",
-              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=1",
-              imageAlt: "Rachel Goldstein testimonial"
+              id: "1",              name: "Rachel Goldstein",              handle: "@rachelgoldstein_dev",              testimonial: "Webild delivered a residential project that honors cultural heritage while providing modern luxury. Their attention to detail is remarkable.",              rating: 5,
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=1",              imageAlt: "Rachel Goldstein testimonial"
             },
             {
-              id: "2",
-              name: "Noam Bergman",
-              handle: "@noam_bergman_ceo",
-              testimonial: "The cultural center Webild designed for our community has become a beloved gathering space. Their design truly captures our values.",
-              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=2",
-              imageAlt: "Noam Bergman testimonial"
+              id: "2",              name: "Noam Bergman",              handle: "@noam_bergman_ceo",              testimonial: "The cultural center Webild designed for our community has become a beloved gathering space. Their design truly captures our values.",              rating: 5,
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=2",              imageAlt: "Noam Bergman testimonial"
             }
           ]}
         />
@@ -123,25 +99,14 @@ export default function PortfolioPage() {
           gridVariant="three-columns-all-equal-width"
           products={[
             {
-              id: "process-1",
-              name: "Cultural Research & Analysis",
-              price: "Phase 1",
-              imageSrc: "/placeholders/placeholder1.webp?_wi=1",
-              imageAlt: "Cultural research and analysis phase"
+              id: "process-1",              name: "Cultural Research & Analysis",              price: "Phase 1",              imageSrc: "/placeholders/placeholder1.webp?_wi=1",              imageAlt: "Cultural research and analysis phase"
             },
             {
-              id: "process-2",
-              name: "Conceptual Design Development",
-              price: "Phase 2", 
-              imageSrc: "/placeholders/placeholder1.webp?_wi=2",
-              imageAlt: "Conceptual design development phase"
+              id: "process-2",              name: "Conceptual Design Development",              price: "Phase 2", 
+              imageSrc: "/placeholders/placeholder1.webp?_wi=2",              imageAlt: "Conceptual design development phase"
             },
             {
-              id: "process-3",
-              name: "Implementation & Completion",
-              price: "Phase 3",
-              imageSrc: "/placeholders/placeholder1.webp?_wi=3",
-              imageAlt: "Implementation and completion phase"
+              id: "process-3",              name: "Implementation & Completion",              price: "Phase 3",              imageSrc: "/placeholders/placeholder1.webp?_wi=3",              imageAlt: "Implementation and completion phase"
             }
           ]}
         />
@@ -150,12 +115,10 @@ export default function PortfolioPage() {
       <FooterLogoReveal
         logoText="Webild"
         leftLink={{
-          text: "Privacy Policy",
-          href: "#"
+          text: "Privacy Policy",          href: "#"
         }}
         rightLink={{
-          text: "Terms of Service",
-          href: "#"
+          text: "Terms of Service",          href: "#"
         }}
       />
     </ThemeProvider>

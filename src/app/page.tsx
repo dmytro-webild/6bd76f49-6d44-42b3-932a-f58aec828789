@@ -1,7 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import FeatureBorderGlow from '@/components/sections/feature/featureBorderGlow/FeatureBorderGlow';
@@ -14,19 +14,19 @@ import { Building, Compass, Lightbulb, Handshake, Star, Users } from 'lucide-rea
 export default function HomePage() {
   return (
     <ThemeProvider
-      defaultButtonVariant="text-shift"
-      defaultTextAnimation="reveal-blur"
-      borderRadius="soft"
+      defaultButtonVariant="hover-magnetic"
+      defaultTextAnimation="entrance-slide"
+      borderRadius="rounded"
       contentWidth="medium"
       sizing="largeSmall"
-      background="none"
-      cardStyle="subtle-shadow"
-      primaryButtonStyle="shadow"
-      secondaryButtonStyle="solid"
+      background="aurora"
+      cardStyle="glass-elevated"
+      primaryButtonStyle="gradient"
+      secondaryButtonStyle="glass"
       headingFontWeight="semibold"
     >
       <div id="nav" data-section="nav">
-        <NavbarLayoutFloatingOverlay
+        <NavbarStyleFullscreen
           brandName="Webild"
           navItems={[
             { name: "Home", id: "/" },
@@ -36,10 +36,8 @@ export default function HomePage() {
             { name: "About", id: "/about" },
             { name: "Contact", id: "/contact" }
           ]}
-          button={{
-            text: "Explore Our Work",
-            href: "/portfolio"
-          }}
+          bottomLeftText="Global Community"
+          bottomRightText="hello@webild.com"
         />
       </div>
 
@@ -90,13 +88,11 @@ export default function HomePage() {
           features={[
             {
               icon: Building,
-              title: "Heritage Site Design",
-              description: "Thoughtfully designed spaces that honor cultural and historical significance while meeting modern functional needs."
+              title: "Heritage Site Design",              description: "Thoughtfully designed spaces that honor cultural and historical significance while meeting modern functional needs."
             },
             {
               icon: Users,
-              title: "Community Spaces",
-              description: "Cultural centers and community gathering spaces that foster connection, dialogue, and shared identity."
+              title: "Community Spaces",              description: "Cultural centers and community gathering spaces that foster connection, dialogue, and shared identity."
             }
           ]}
         />
@@ -112,14 +108,7 @@ export default function HomePage() {
           textboxLayout="default"
           useInvertedBackground={false}
           names={[
-            "Israeli Museum Association",
-            "Jewish Heritage Foundation",
-            "Tel Aviv Cultural Alliance",
-            "International Museum Council",
-            "Cultural Preservation Initiative",
-            "Heritage Development Group",
-            "Architectural Excellence Institute",
-            "Global Design Consortium"
+            "Israeli Museum Association",            "Jewish Heritage Foundation",            "Tel Aviv Cultural Alliance",            "International Museum Council",            "Cultural Preservation Initiative",            "Heritage Development Group",            "Architectural Excellence Institute",            "Global Design Consortium"
           ]}
           showCard={true}
           speed={40}
@@ -139,22 +128,12 @@ export default function HomePage() {
           showRating={true}
           testimonials={[
             {
-              id: "1",
-              name: "Yael Moran",
-              handle: "@yaelmoran_curator",
-              testimonial: "Webild transformed our vision for a modern Jewish heritage center into architectural reality. Their sensitivity to cultural nuance combined with innovative design was exceptional.",
-              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg?_wi=1",
-              imageAlt: "Yael Moran testimonial"
+              id: "1",              name: "Yael Moran",              handle: "@yaelmoran_curator",              testimonial: "Webild transformed our vision for a modern Jewish heritage center into architectural reality. Their sensitivity to cultural nuance combined with innovative design was exceptional.",              rating: 5,
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg?_wi=1",              imageAlt: "Yael Moran testimonial"
             },
             {
-              id: "2",
-              name: "Dr. Avi Hartman",
-              handle: "@avihartman_director",
-              testimonial: "Working with Webild on our museum expansion was a game-changer. They understood our institutional values while pushing architectural boundaries.",
-              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg?_wi=2",
-              imageAlt: "Dr. Avi Hartman testimonial"
+              id: "2",              name: "Dr. Avi Hartman",              handle: "@avihartman_director",              testimonial: "Working with Webild on our museum expansion was a game-changer. They understood our institutional values while pushing architectural boundaries.",              rating: 5,
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg?_wi=2",              imageAlt: "Dr. Avi Hartman testimonial"
             }
           ]}
         />
@@ -163,12 +142,10 @@ export default function HomePage() {
       <FooterLogoReveal
         logoText="Webild"
         leftLink={{
-          text: "Privacy Policy",
-          href: "#"
+          text: "Privacy Policy",          href: "#"
         }}
         rightLink={{
-          text: "Terms of Service",
-          href: "#"
+          text: "Terms of Service",          href: "#"
         }}
       />
     </ThemeProvider>

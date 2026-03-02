@@ -91,7 +91,7 @@ export default function ServicesPage() {
           tag="Our Philosophy"
           tagIcon={Compass}
           tagAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg?_wi=3"
           imageAlt="Architectural detail showing our design philosophy"
           useInvertedBackground={false}
           buttons={[
@@ -107,7 +107,7 @@ export default function ServicesPage() {
           tag="Our Expertise"
           tagIcon={Lightbulb}
           tagAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=3"
           imageAlt="Example of our heritage-sensitive architectural work"
           useInvertedBackground={true}
           buttons={[

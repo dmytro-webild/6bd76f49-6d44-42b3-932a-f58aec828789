@@ -5,29 +5,19 @@ import { ServiceWrapper } from "@/components/ServiceWrapper";
 import Tag from "@/tag/Tag";
 
 const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
+  variable: "--font-open-sans",  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Webild | Architectural Design for Jewish Heritage",
-  description: "Webild designs transformative spaces that honor Jewish heritage with contemporary innovation. Tel Aviv-based architecture for museums, cultural centers, and community spaces.",
-  keywords: ["architecture", "jewish heritage", "cultural design", "museum design", "tel aviv", "architectural studio", "contemporary design"],
+  title: "Webild | Architectural Design for Jewish Heritage",  description: "Webild designs transformative spaces that honor Jewish heritage with contemporary innovation. Tel Aviv-based architecture for museums, cultural centers, and community spaces.",  keywords: ["architecture", "jewish heritage", "cultural design", "museum design", "tel aviv", "architectural studio", "contemporary design"],
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: "Webild | Architecture Honoring Jewish Heritage",
-    description: "Webild designs transformative spaces that bridge cultural identity with innovative architecture. Discover our portfolio of heritage sites, museums, and community centers.",
-    type: "website",
-    siteName: "Webild",
-  },
+    title: "Webild | Architecture Honoring Jewish Heritage",    description: "Webild designs transformative spaces that bridge cultural identity with innovative architecture. Discover our portfolio of heritage sites, museums, and community centers.",    type: "website",    siteName: "Webild"},
   twitter: {
-    card: "summary_large_image",
-    title: "Webild | Architectural Design for Jewish Heritage",
-    description: "Transformative architectural design that honors cultural heritage and vision. From Tel Aviv to the world.",
-  },
+    card: "summary_large_image",    title: "Webild | Architectural Design for Jewish Heritage",    description: "Transformative architectural design that honors cultural heritage and vision. From Tel Aviv to the world."},
 };
 
 export default function RootLayout({

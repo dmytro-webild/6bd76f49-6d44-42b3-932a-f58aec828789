@@ -61,7 +61,7 @@ export default function ContactPage() {
           tag="Our Studio"
           tagIcon={Compass}
           tagAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/vertical-low-angle-shot-laktha-center-reflecting-sunset-russia_181624-30555.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/vertical-low-angle-shot-laktha-center-reflecting-sunset-russia_181624-30555.jpg?_wi=2"
           imageAlt="Webild studio in Tel Aviv"
           useInvertedBackground={false}
           buttons={[
@@ -77,7 +77,7 @@ export default function ContactPage() {
           tag="Our Process"
           tagIcon={Compass}
           tagAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg?_wi=4"
           imageAlt="Collaborative design process at work"
           useInvertedBackground={true}
           buttons={[

@@ -62,7 +62,7 @@ export default function PortfolioPage() {
               id: "2",
               name: "Jewish Community Cultural Center",
               price: "Completed 2022",
-              imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=2",
               imageAlt: "Community cultural center architectural design"
             },
             {
@@ -94,7 +94,7 @@ export default function PortfolioPage() {
               handle: "@rachelgoldstein_dev",
               testimonial: "Webild delivered a residential project that honors cultural heritage while providing modern luxury. Their attention to detail is remarkable.",
               rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=1",
               imageAlt: "Rachel Goldstein testimonial"
             },
             {
@@ -103,7 +103,7 @@ export default function PortfolioPage() {
               handle: "@noam_bergman_ceo",
               testimonial: "The cultural center Webild designed for our community has become a beloved gathering space. Their design truly captures our values.",
               rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=2",
               imageAlt: "Noam Bergman testimonial"
             }
           ]}
@@ -126,21 +126,21 @@ export default function PortfolioPage() {
               id: "process-1",
               name: "Cultural Research & Analysis",
               price: "Phase 1",
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "/placeholders/placeholder1.webp?_wi=1",
               imageAlt: "Cultural research and analysis phase"
             },
             {
               id: "process-2",
               name: "Conceptual Design Development",
               price: "Phase 2", 
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "/placeholders/placeholder1.webp?_wi=2",
               imageAlt: "Conceptual design development phase"
             },
             {
               id: "process-3",
               name: "Implementation & Completion",
               price: "Phase 3",
-              imageSrc: "/placeholders/placeholder1.webp",
+              imageSrc: "/placeholders/placeholder1.webp?_wi=3",
               imageAlt: "Implementation and completion phase"
             }
           ]}

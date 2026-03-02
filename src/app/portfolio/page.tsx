@@ -27,6 +27,7 @@ export default function PortfolioPage() {
           navItems={[
             { name: "Home", id: "/" },
             { name: "Portfolio", id: "/portfolio" },
+            { name: "Heritage", id: "/heritage" },
             { name: "Services", id: "/services" },
             { name: "Team", id: "/team" },
             { name: "About", id: "/about" },
@@ -102,8 +103,7 @@ export default function PortfolioPage() {
               id: "process-1",              name: "Cultural Research & Analysis",              price: "Phase 1",              imageSrc: "/placeholders/placeholder1.webp?_wi=1",              imageAlt: "Cultural research and analysis phase"
             },
             {
-              id: "process-2",              name: "Conceptual Design Development",              price: "Phase 2", 
-              imageSrc: "/placeholders/placeholder1.webp?_wi=2",              imageAlt: "Conceptual design development phase"
+              id: "process-2",              name: "Conceptual Design Development",              price: "Phase 2",              imageSrc: "/placeholders/placeholder1.webp?_wi=2",              imageAlt: "Conceptual design development phase"
             },
             {
               id: "process-3",              name: "Implementation & Completion",              price: "Phase 3",              imageSrc: "/placeholders/placeholder1.webp?_wi=3",              imageAlt: "Implementation and completion phase"

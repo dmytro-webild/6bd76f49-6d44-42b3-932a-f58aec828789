@@ -46,7 +46,7 @@ export default function AboutPage() {
           tag="Our Mission"
           tagIcon={Compass}
           tagAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg?_wi=2"
           imageAlt="Webild's design philosophy in action"
           useInvertedBackground={false}
           buttons={[
@@ -71,7 +71,7 @@ export default function AboutPage() {
               id: "1",
               name: "Michal Cohen",
               role: "Founder & Principal Architect",
-              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg",
+              imageSrc: "http://img.b2bpic.net/free-photo/smiling-homosexual-man-official-suit-looking-camera-close-up-shot-happy-gay-getting-dressed-wedding-ceremony-standing-hotel-room-with-his-partner-background-love-emotion-concept_74855-22675.jpg?_wi=3",
               imageAlt: "Michal Cohen, Founder and Principal Architect at Webild"
             },
             {
@@ -92,7 +92,7 @@ export default function AboutPage() {
           tag="Core Values"
           tagIcon={Compass}
           tagAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=1"
           imageAlt="Architectural space reflecting our values"
           useInvertedBackground={true}
           buttons={[

@@ -1,7 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FeatureBorderGlow from '@/components/sections/feature/featureBorderGlow/FeatureBorderGlow';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
@@ -10,19 +10,19 @@ import { Lightbulb, Compass, Building2, Users, Landmark, Home, Palette, Zap } fr
 export default function ServicesPage() {
   return (
     <ThemeProvider
-      defaultButtonVariant="text-shift"
-      defaultTextAnimation="reveal-blur"
-      borderRadius="soft"
+      defaultButtonVariant="hover-magnetic"
+      defaultTextAnimation="entrance-slide"
+      borderRadius="rounded"
       contentWidth="medium"
       sizing="largeSmall"
-      background="none"
-      cardStyle="subtle-shadow"
-      primaryButtonStyle="shadow"
-      secondaryButtonStyle="solid"
+      background="aurora"
+      cardStyle="glass-elevated"
+      primaryButtonStyle="gradient"
+      secondaryButtonStyle="glass"
       headingFontWeight="semibold"
     >
       <div id="nav" data-section="nav">
-        <NavbarLayoutFloatingOverlay
+        <NavbarStyleFullscreen
           brandName="Webild"
           navItems={[
             { name: "Home", id: "/" },
@@ -32,10 +32,8 @@ export default function ServicesPage() {
             { name: "About", id: "/about" },
             { name: "Contact", id: "/contact" }
           ]}
-          button={{
-            text: "Explore Our Work",
-            href: "/portfolio"
-          }}
+          bottomLeftText="Global Community"
+          bottomRightText="hello@webild.com"
         />
       </div>
 
@@ -52,33 +50,27 @@ export default function ServicesPage() {
           features={[
             {
               icon: Building2,
-              title: "Heritage Site Design",
-              description: "Thoughtfully designed spaces that honor cultural and historical significance while meeting modern functional needs."
+              title: "Heritage Site Design",              description: "Thoughtfully designed spaces that honor cultural and historical significance while meeting modern functional needs."
             },
             {
               icon: Users,
-              title: "Community Spaces",
-              description: "Cultural centers and community gathering spaces that foster connection, dialogue, and shared identity."
+              title: "Community Spaces",              description: "Cultural centers and community gathering spaces that foster connection, dialogue, and shared identity."
             },
             {
               icon: Landmark,
-              title: "Museum Architecture",
-              description: "Innovative museum environments that showcase cultural narratives with cutting-edge design and accessibility."
+              title: "Museum Architecture",              description: "Innovative museum environments that showcase cultural narratives with cutting-edge design and accessibility."
             },
             {
               icon: Home,
-              title: "Residential Projects",
-              description: "Bespoke residential designs that integrate cultural values with contemporary luxury and comfort."
+              title: "Residential Projects",              description: "Bespoke residential designs that integrate cultural values with contemporary luxury and comfort."
             },
             {
               icon: Palette,
-              title: "Design Consultation",
-              description: "Expert guidance on culturally sensitive design strategies and architectural heritage preservation."
+              title: "Design Consultation",              description: "Expert guidance on culturally sensitive design strategies and architectural heritage preservation."
             },
             {
               icon: Zap,
-              title: "Innovative Solutions",
-              description: "Creative architectural approaches that balance tradition with forward-thinking design innovation."
+              title: "Innovative Solutions",              description: "Creative architectural approaches that balance tradition with forward-thinking design innovation."
             }
           ]}
         />
@@ -119,12 +111,10 @@ export default function ServicesPage() {
       <FooterLogoReveal
         logoText="Webild"
         leftLink={{
-          text: "Privacy Policy",
-          href: "#"
+          text: "Privacy Policy",          href: "#"
         }}
         rightLink={{
-          text: "Terms of Service",
-          href: "#"
+          text: "Terms of Service",          href: "#"
         }}
       />
     </ThemeProvider>

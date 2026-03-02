@@ -7,9 +7,10 @@ import MediaAbout from '@/components/sections/about/MediaAbout';
 import FeatureBorderGlow from '@/components/sections/feature/featureBorderGlow/FeatureBorderGlow';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardThirteen from '@/components/sections/testimonial/TestimonialCardThirteen';
+import FeatureCardTwentyFive from '@/components/sections/feature/FeatureCardTwentyFive';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 import Link from 'next/link';
-import { Building, Compass, Lightbulb, Handshake, Star, Users } from 'lucide-react';
+import { Building, Compass, Lightbulb, Handshake, Star, Users, Palette, Award } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function HomePage() {
           navItems={[
             { name: "Home", id: "/" },
             { name: "Portfolio", id: "/portfolio" },
+            { name: "Heritage", id: "/heritage" },
             { name: "Services", id: "/services" },
             { name: "Team", id: "/team" },
             { name: "About", id: "/about" },
@@ -71,6 +73,65 @@ export default function HomePage() {
           useInvertedBackground={false}
           buttons={[
             { text: "Our Approach", href: "/about" }
+          ]}
+        />
+      </div>
+
+      <div id="heritage" data-section="heritage">
+        <FeatureCardTwentyFive
+          title="Jewish Heritage & Cultural Pride Showcase"
+          description="Explore our portfolio of projects that celebrate Jewish heritage while integrating contemporary design. Each project combines architectural innovation with cultural authenticity."
+          tag="Heritage Projects"
+          tagIcon={Award}
+          tagAnimation="slide-up"
+          textboxLayout="default"
+          animationType="slide-up"
+          useInvertedBackground={false}
+          features={[
+            {
+              icon: Building,
+              title: "Tel Aviv Heritage Museum",              description: "A modern museum celebrating Jewish cultural history through innovative architectural storytelling and interactive design.",              mediaItems: [
+                {
+                  imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg",                  imageAlt: "Heritage museum exterior"
+                },
+                {
+                  imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=1",                  imageAlt: "Heritage museum interior gallery"
+                }
+              ]
+            },
+            {
+              icon: Users,
+              title: "Jewish Community Cultural Center",              description: "A vibrant community gathering space that honors traditions while fostering contemporary cultural dialogue and celebration.",              mediaItems: [
+                {
+                  imageSrc: "http://img.b2bpic.net/free-photo/hallway-abbey_181624-16761.jpg?_wi=2",                  imageAlt: "Community center gathering space"
+                },
+                {
+                  imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg",                  imageAlt: "Community center exterior architecture"
+                }
+              ]
+            },
+            {
+              icon: Palette,
+              title: "Jewish Identity Residential Complex",              description: "Luxury residential design that integrates cultural symbolism and heritage values into contemporary living spaces with modern amenities.",              mediaItems: [
+                {
+                  imageSrc: "http://img.b2bpic.net/free-photo/frog-s-eye-view-architectural-twin-buildings-against-clear-blue-sky_181624-59777.jpg?_wi=1",                  imageAlt: "Residential complex architectural design"
+                },
+                {
+                  imageSrc: "http://img.b2bpic.net/free-photo/vertical-low-angle-shot-laktha-center-reflecting-sunset-russia_181624-30555.jpg?_wi=2",                  imageAlt: "Residential complex sunset view"
+                }
+              ]
+            },
+            {
+              icon: Compass,
+              title: "Historic Synagogue Renovation",              description: "Respectful restoration of historic Jewish places of worship, preserving cultural heritage while incorporating modern accessibility and functionality.",              mediaItems: [
+                {
+                  imageSrc: "http://img.b2bpic.net/free-photo/gothic-vaults-stone-ceiling-patterns-historic-church-architecture_169016-68764.jpg?_wi=1",                  imageAlt: "Synagogue interior architectural details"
+                },
+                {
+                  imageSrc: "http://img.b2bpic.net/free-photo/ancient-vaults-cathedral-windows-stone-architecture-with-history-sacred-church-atmosphere_169016-68741.jpg?_wi=1",                  imageAlt: "Synagogue restoration exterior"
+                }
+              ]
+            }
           ]}
         />
       </div>
